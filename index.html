@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git hub landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="total-width">
+        <nav class="nav-container">
+          <img
+            src="img/wds_logo.png"
+            width="50"
+            alt="web development simlified logo"
+          />
+          <ul class="main-nav">
+            <li><a href="#c" class="nav-items">Curriculum</a></li>
+            <li><a href="#f" class="nav-items">Pricing</a></li>
+            <li><a href="#contact" class="nav-items blue-btn">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="total-width">
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1 class="main-heading">WDS bootcamp</h1>
+            <div class="title">From no stact to full stack</div>
+            <a href="#" class="nav-items blue-btn">Learn More</a>
+          </div>
+          <img class="arrow-logo" src="img/arrow_down.svg" width="30" alt="" />
+        </div>
+      </section>
+
+      <section id="c" class="curriculum-section">
+        <div class="curriculum-wrapper">
+          <h2 class="sec-heading">Curriculum</h2>
+          <!-- 1 -->
+          <div class="grid-items">
+            <img src="img/html_icon.svg" width="50" alt="html icon" />
+            <p>
+              Start with the basics by learning HTML/CSS to build your first
+              website
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="grid-items">
+            <img src="img/database_icon.svg" width="50" alt="database icon" />
+            <p>
+              Manage application data by learning SQL and NoSQL database
+              architecture
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="grid-items">
+            <img src="img/edit_page_icon.svg" width="50" alt="edit_page_icon" />
+            <p>
+              Create stunning designs by using modern design tools like Figma
+              and Sketch
+            </p>
+          </div>
+          <!--4  -->
+          <div class="grid-items">
+            <img src="img/node_js_icon.svg" width="50" alt="node_js_icon" />
+            <p>
+              Node JS Icon Build interactive web applications with the world’s
+              most popular backend
+            </p>
+          </div>
+          <!--5  -->
+          <div class="grid-items">
+            <img src="img/react_icon.svg" width="50" alt="react_icon" />
+            <p>Use the most popular frontend framework to create modern PWAs</p>
+          </div>
+          <!-- 6 -->
+          <div class="grid-items">
+            <img src="img/vscode_icon.svg" width="50" alt="vscode_icon" />
+            <p>
+              Use the latest technology for editing and creating amazing web
+              applications
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="f" class="free-section">
+        <div class="free-wrapper">
+          <h2 class="sec-heading">Free</h2>
+          <p>
+            That’s right. All of this amazing content is available completely
+            for free on YouTube!
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="form-section">
+        <div class="form-wrapper">
+          <h2 class="sec-heading">Contact</h2>
+          <form action="#">
+            <div class="form-element">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-element">
+              <label for="msg">Message</label>
+              <textarea
+                class="text-area"
+                name="message"
+                id="msg"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="btn-container">
+              <a href="#" class="form-btn">Send</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

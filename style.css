@@ -1,0 +1,238 @@
+*,
+::after,
+::before {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  /* scroll-behavior: smooth; */
+}
+
+.nav-container {
+  background-color: #1b2522;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.nav-items:link,
+.nav-items:visited {
+  color: hsl(0, 0%, 90%);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-items.blue-btn {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10000px;
+}
+
+.nav-items:hover {
+  color: hsl(0, 0%, 80%);
+}
+.nav-items.blue-btn:hover,
+.nav-items.blue-btn:focus {
+  background-color: hsl(200, 80%, 40%);
+  color: hsl(0, 0%, 90%);
+}
+
+.hero-section {
+  width: auto;
+  height: 100vh;
+  background-image: url("img/header_image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.hero-content {
+  color: white;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 4.4rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.arrow-logo {
+  /* display: block; */
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+/*  */
+
+.curriculum-wrapper {
+  max-width: 1000px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-template-areas:
+    "heading heading"
+    "child1 child2"
+    "child3 child4"
+    "child5 child6";
+  column-gap: 3rem;
+  row-gap: 4rem;
+  padding: 5rem;
+}
+
+.sec-heading {
+  font-size: 3.2rem;
+}
+.curriculum-wrapper > *:not(:first-child) {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.curriculum-wrapper > :nth-child(1) {
+  grid-area: heading;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+.curriculum-wrapper > :nth-child(2) {
+  grid-area: child1;
+}
+.curriculum-wrapper > :nth-child(3) {
+  grid-area: child2;
+}
+.curriculum-wrapper > :nth-child(4) {
+  grid-area: child3;
+}
+.curriculum-wrapper > :nth-child(5) {
+  grid-area: child4;
+}
+.curriculum-wrapper > :nth-child(6) {
+  grid-area: child5;
+}
+.curriculum-wrapper > :nth-child(7) {
+  grid-area: child6;
+}
+/*  */
+
+.free-section {
+  background-color: hsl(200, 100%, 50%);
+  color: hsl(0, 0%, 95%);
+  text-align: center;
+}
+.free-wrapper {
+  max-width: 300px;
+  margin: 0px auto;
+  padding: 2rem;
+}
+
+.free-wrapper > :first-child {
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+}
+
+/*  */
+
+.form-section {
+  margin-top: 4rem;
+}
+
+.form-wrapper {
+  max-width: 1000px;
+  /* width: 100%; */
+  margin: 0px auto;
+  padding: 5rem;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-element:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form-element {
+  width: 100%;
+}
+.form-element label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.text-area {
+  max-width: 1000px;
+  width: 100%;
+  outline: 1px solid black;
+  border: none;
+  padding: 1rem;
+  resize: vertical;
+  border-radius: 1rem;
+}
+
+.form-element input {
+  width: 100%;
+  border: none;
+  outline: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.form-element input:focus,
+.form-element .text-area:focus {
+  outline: 1px solid hsl(200, 100%, 50%);
+  border: none;
+}
+
+.btn-container {
+  text-align: right;
+}
+
+.form-btn:link,
+.form-btn:visited {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: hsl(200, 100%, 50%);
+  padding: 0.5em 1.5em;
+  border-radius: 0.3em;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: hsl(200, 80%, 40%);
+}
