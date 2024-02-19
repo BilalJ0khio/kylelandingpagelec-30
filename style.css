@@ -236,3 +236,18 @@ body {
 .form-btn:focus {
   background-color: hsl(200, 80%, 40%);
 }
+
+@media (max-width: 42.43em) {
+  .curriculum-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "heading heading"
+      "child1 child1"
+      "child2 child2"
+      "child3 child3"
+      "child4 child4"
+      "child5 child5"
+      "child6 child6";
+  }
+}
