@@ -238,6 +238,10 @@ body {
 }
 
 @media (max-width: 42.43em) {
+  :root {
+    font-size: 58.3%;
+  }
+
   .curriculum-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
